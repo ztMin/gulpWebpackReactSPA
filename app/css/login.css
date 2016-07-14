@@ -1,0 +1,49 @@
+
+.login{
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	z-index:2222;
+}
+.loginBox{
+	position:absolute;
+	left:50%;
+	top:50%;
+	width:300px;
+	height:300px;
+	padding:10px;
+	border-radius:5px;
+	margin:-161px 0 0 -161px;
+	/*
+	border:solid 1px rgba(255,255,255,0.5);
+	background-color:rgba(255,255,255,0.5);
+	box-shadow:inset 0 0 10px rgba(0,0,0,0.1);
+	*/
+}
+/*
+.loginBox input,.loginBox input:hover,.loginBox input:focus{
+	background:none;
+	border-color:transparent;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	outline: 0;
+	border-bottom:solid 1px #fff;
+	color:#fff;
+	padding: 6px 0;
+}
+*/
+
+.loginBox .btn,.loginBox .btn:focus{
+	display:block;
+	border:solid 2px rgba(255,255,255,0.3);
+	background: none;
+	color:#fff;
+	border-radius: 2em;
+	outline:0;
+}
+.loginBox .btn:active{
+	outline:0;
+	color:#f2f2f2;
+}

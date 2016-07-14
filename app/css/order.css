@@ -1,0 +1,113 @@
+.orderPage{
+	position:relative;
+}
+.orderForm{
+	position:relative;
+	display:block;
+	color:#fff;
+	height:45px;
+	line-height:45px;
+	background-color:#455869;
+	z-index: 2;
+}
+.orderForm input,
+.orderForm input[readonly]
+{
+	border:0;
+	line-height: 45px;
+	height: 45px;
+	background-color: transparent;
+	color:#fff;
+}
+.orderForm input:focus{
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+/*订单列表*/
+.orderList{
+	position:relative;
+	padding:20px;
+	z-index: 1;
+}
+.orderList .col-md-2{
+	float:left;
+	width:20%;
+	min-width:280px;
+	max-width:400px;
+}
+.orderList .order{
+	display:block;
+	min-width:250px;
+	width:100%;
+	padding:0;
+	border-radius:5px;
+	background-color:#fff;
+	/*
+	-webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+	*/
+}
+.orderList .prodInfo{
+	display:block;
+	position: relative;
+	padding:10px;
+}
+.schedule{
+	position: relative;
+	background-color:#f2f2f2;
+}
+.schedule ul{
+    margin: 5px 10px;
+    background-color: #EAF0F5;
+}
+.schedule li{
+	position:relative;
+	padding:5px 10px 5px 20px;
+	z-index: 2;
+}
+.schedule:before,.schedule li:before{
+	content:'';
+	position: absolute;
+	left:10px;
+	top:0;
+	width:1px;
+	height:100%;
+	background-color:#aaa;
+	z-index:1;
+}
+.schedule li:before{
+	width: 13px;
+    height: 1px;
+    top: 50%;
+    left: 0;
+}
+
+.orderList .userInfo{
+	padding:10px;
+}
+.orderList .userInfo img{
+	width:50px;
+	height:50px;
+	border-radius:50px;
+}
+
+.orderList .editBtn{
+	float:left;
+	width:25%;
+	padding:10px;
+	border:solid 1px #ddd;
+	border-left-color:transparent;
+	border-bottom:none;
+}
+.orderList .editBtn:active{
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    background-color:#f2f2f2;
+}
+.orderList .editBtn:first-child{
+	border-radius:0 0 0 5px;
+}
+.orderList .editBtn:last-child{
+	border-radius:0 0 5px 0;
+	border-right-color:transparent;
+}

@@ -1,0 +1,45 @@
+
+.waveInput{
+    display:inline-block;
+    position:relative;
+    max-width: 300px;
+    /*
+    width: -webkit-calc(100% - 2em);
+    */
+    width: 100%;
+    overflow:hidden;
+}
+.waveInput .inputTxt{
+    position: relative;
+    display: block;
+    float: right;
+    padding: .8em;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    background: 0 0;
+    color: #fff;
+    font-weight: 400;
+    -webkit-appearance: none;
+    outline: 0;
+}
+.waveInput svg:not(:root) {
+    overflow: hidden;
+}
+.waveInput .waveSvg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: none;
+    stroke: rgba(255,255,255,0.9);
+    pointer-events: none;
+    -webkit-transition: -webkit-transform .7s,stroke .7s;
+    transition: transform .7s,stroke .7s;
+    -webkit-transition-timing-function: cubic-bezier(0,.25,.5,1);
+    transition-timing-function: cubic-bezier(0,.25,.5,1);
+}
+.waveInput .inputTxt:focus~.waveSvg{
+    stroke: rgba(255,255,255,1);
+    -webkit-transform: translate3d(-66.6%,0,0);
+    transform: translate3d(-66.6%,0,0)
+}
